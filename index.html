@@ -3,12 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <title>Anil's Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=3.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: #f9f9f9;
+      color: #222;
+    }
+    h1 {
+      color: #18497a;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    nav {
+      text-align: center;
+      margin-bottom: 22px;
+    }
+    nav a {
+      color: #1765c1;
+      margin: 0 12px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      background: #fff;
+      margin: 28px 0;
+      padding: 24px;
+      border-radius: 9px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    h2 {
+      color: #2e6ba3;
+      border-bottom: 2px solid #dbdbdb;
+      padding-bottom: 4px;
+      margin-bottom: 13px;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 18px;
+    }
+    a { color: #1765c1; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    img.profile {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border: 3px solid #2e6ba3;
+      display: block;
+      margin: 0 auto 20px auto;
+    }
+    .cert-img {
+      display: block;
+      margin-top: 12px;
+      max-width: 200px;
+    }
+    @media (max-width: 600px) {
+      body { margin: 10px; padding: 4px; }
+      section { padding: 12px; }
+      img, .cert-img { max-width: 100%; height: auto; }
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to Anil’s Portfolio</h1>
+
+  <h1>Anil Rajpurohit</h1>
+  <nav>
+    <a href="#about">About</a>|
+    <a href="#skills">Skills</a>|
+    <a href="#projects">Projects</a>|
+    <a href="#certifications">Certifications</a>|
+    <a href="#experience">Experience</a>|
+    <a href="#contact">Contact</a>
+  </nav>
+
   <!-- About Me Section -->
   <section id="about">
+    <!-- Optional photo: make sure to upload a profile.jpg or similar in images/ -->
+    <img src="images/profile.jpg" alt="Profile Photo" class="profile">
     <h2>About Me</h2>
     <p>
       Hi, I'm Anil! I am passionate about cybersecurity and technology.<br>
@@ -19,66 +97,70 @@
       <a href="pdfs/Anil_Rajpurohit_Resume_TMX.pdf" download>Download My Resume (PDF)</a>
     </p>
   </section>
-<!-- Skills & Tools Section -->
-<section id="skills">
-  <h2>Skills & Tools</h2>
-  <ul>
-    <li>Security Tools: Wireshark, Nessus, Nmap</li>
-    <li>Programming: Python, Bash, PowerShell</li>
-    <li>Platforms: Microsoft 365, Azure, Linux, Windows</li>
-    <li>Compliance & Standards: NIST, ISO 27001</li>
-    <li>Cloud: Microsoft Azure (beginner), AWS (familiar)</li>
-  </ul>
-</section>
-<!-- Projects Section -->
-<section id="projects">
-  <h2>Projects</h2>
-  <div>
-    <h3>Microsoft 365 Deployment</h3>
-    <p>Deployed Microsoft 365 for a client; improved collaboration and security with conditional access and data loss prevention policies.</p>
-    <a href="pdfs/M365_CaseStudy.pdf" target="_blank">View Case Study (PDF)</a>
-  </div>
-  <div>
-    <h3>Network Security Enhancement</h3>
-    <p>Conducted vulnerability assessments and implemented multi-factor authentication in a small business environment.</p>
-    <img src="images/network_security.png" alt="Network Security Project Screenshot" width="300">
-  </div>
-  <!-- Add more projects as needed -->
-</section>
-<!-- Certifications Section -->
-<section id="certifications">
-  <h2>Certifications</h2>
-  <ul>
-    <li>ISC2 Certified in Cybersecurity (CC)</li>
-    <li>CompTIA Security+ (In Progress)</li>
-    <!-- Add more as achieved -->
-  </ul>
-</section>
-<img src="certificates/cc_cert.png" alt="ISC2 CC Certificate" width="150">
-<!-- Experience Section -->
-<section id="experience">
-  <h2>Experience</h2>
-  <div>
-    <h3>Software Engineer</h3>
-    <p>Company Name | Location | 2023–present</p>
+
+  <!-- Skills & Tools Section -->
+  <section id="skills">
+    <h2>Skills & Tools</h2>
     <ul>
-      <li>Key achievement 1</li>
-      <li>Key achievement 2</li>
+      <li>Security Tools: Wireshark, Nessus, Nmap</li>
+      <li>Programming: Python, Bash, PowerShell</li>
+      <li>Platforms: Microsoft 365, Azure, Linux, Windows</li>
+      <li>Compliance & Standards: NIST, ISO 27001</li>
+      <li>Cloud: Microsoft Azure (beginner), AWS (familiar)</li>
     </ul>
-  </div>
-</section>
-<!-- Contact Section -->
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:anil@email.com">anil@email.com</a></p>
-  <p>
-    LinkedIn: <a href="https://linkedin.com/in/anil-profile" target="_blank">View Profile</a>
-    <!-- Add GitHub, Twitter, etc., if desired -->
-  </p>
-</section>
+  </section>
 
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div>
+      <h3>Microsoft 365 Deployment</h3>
+      <p>Deployed Microsoft 365 for a client; improved collaboration and security with conditional access and data loss prevention policies.</p>
+      <a href="pdfs/M365_CaseStudy.pdf" target="_blank">View Case Study (PDF)</a>
+    </div>
+    <div>
+      <h3>Network Security Enhancement</h3>
+      <p>Conducted vulnerability assessments and implemented multi-factor authentication in a small business environment.</p>
+      <img src="images/network_security.png" alt="Network Security Project Screenshot" width="300">
+    </div>
+    <!-- Add more projects as needed -->
+  </section>
 
+  <!-- Certifications Section -->
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>ISC2 Certified in Cybersecurity (CC)</li>
+      <li>CompTIA Security+ (In Progress)</li>
+      <!-- Add more as achieved -->
+    </ul>
+    <!-- Example certificate badge or image: upload the correct file to certificates/ -->
+    <img src="certificates/cc_cert.png" alt="ISC2 CC Certificate" class="cert-img">
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div>
+      <h3>Software Engineer</h3>
+      <p>Company Name | Location | 2023–present</p>
+      <ul>
+        <li>Key achievement: Improved authentication systems using MFA.</li>
+        <li>Key achievement: Led migration to Microsoft 365 cloud services.</li>
+      </ul>
+    </div>
+    <!-- Add more experience as needed -->
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:anil@email.com">anil@email.com</a></p>
+    <p>
+      LinkedIn: <a href="https://linkedin.com/in/anil-profile" target="_blank">View Profile</a>
+      <!-- Add GitHub, Twitter, etc., if desired -->
+    </p>
+  </section>
 
 </body>
-
 </html>
